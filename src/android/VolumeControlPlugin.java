@@ -48,7 +48,13 @@ public class VolumeControlPlugin extends CordovaPlugin {
             double volumePercentage = maxVolume > 0 ? (double) currentVolume / maxVolume : 0.0;
             
             Log.d(TAG, "Current volume: " + currentVolume + "/" + maxVolume + " (" + (volumePercentage * 100) + "%)");
-            callbackContext.success(volumePercentage);
+            
+            JSONObject result = new JSONObject();
+            result.put("volume", volumePercentage);
+            result.put("volumePercentage", (int) (volumePercentage * 100));
+            result.put("currentVolume", currentVolume);
+            result.put("maxVolume", maxVolume);
+            callbackContext.success(result);
             
         } catch (Exception e) {
             Log.e(TAG, "Error getting volume", e);
