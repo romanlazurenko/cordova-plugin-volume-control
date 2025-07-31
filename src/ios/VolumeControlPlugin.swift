@@ -67,7 +67,7 @@ class VolumeControlPlugin: CDVPlugin {
             let volume = try getCurrentVolume()
             let isMuted = volume < 0.1 // Consider volume below 10% as muted
             
-            let result = [
+            let result: [String: Any] = [
                 "isMuted": isMuted,
                 "volume": volume,
                 "threshold": 0.1
@@ -89,7 +89,7 @@ class VolumeControlPlugin: CDVPlugin {
             let volume = try getCurrentVolume()
             let isMuted = volume < 0.1
             
-            let result = [
+            let result: [String: Any] = [
                 "volume": volume,
                 "isMuted": isMuted,
                 "volumePercentage": Int(volume * 100),
