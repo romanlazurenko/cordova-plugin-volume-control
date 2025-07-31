@@ -18,12 +18,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/cordova-plugin-volume-control.git"
+    "url": "https://github.com/romanlazurenko/cordova-plugin-volume-control.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/cordova-plugin-volume-control/issues"
+    "url": "https://github.com/romanlazurenko/cordova-plugin-volume-control/issues"
   },
-  "homepage": "https://github.com/yourusername/cordova-plugin-volume-control#readme",
+  "homepage": "https://github.com/romanlazurenko/cordova-plugin-volume-control#readme",
   "engines": {
     "cordova": ">=9.0.0"
   },
