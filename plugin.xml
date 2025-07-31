@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-volume-control"
+        version="1.0.0">
+    
+    <name>Volume Control Plugin</name>
+    <description>Cordova plugin to detect and control device volume levels</description>
+    <author>Your Name</author>
+    <license>MIT</license>
+    
+    <js-module src="www/volumecontrol.js" name="VolumeControl">
+        <clobbers target="cordova.plugins.VolumeControl" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VolumeControlPlugin">
+                <param name="ios-package" value="VolumeControlPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/ios/VolumeControlPlugin.swift" />
+        
+        <framework src="AVFoundation.framework" />
+        <framework src="MediaPlayer.framework" />
+    </platform>
+    
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VolumeControlPlugin">
+                <param name="android-package" value="com.yourname.volumecontrol.VolumeControlPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/VolumeControlPlugin.java" target-dir="src/com/yourname/volumecontrol" />
+        
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    </platform>
+</plugin> 

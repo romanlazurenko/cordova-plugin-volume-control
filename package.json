@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-volume-control",
+  "version": "1.0.0",
+  "description": "Cordova plugin to detect and control device volume levels",
+  "main": "www/volumecontrol.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cordova",
+    "volume",
+    "audio",
+    "mute",
+    "ios",
+    "android"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cordova-plugin-volume-control.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/cordova-plugin-volume-control/issues"
+  },
+  "homepage": "https://github.com/yourusername/cordova-plugin-volume-control#readme",
+  "engines": {
+    "cordova": ">=9.0.0"
+  },
+  "cordova": {
+    "id": "cordova-plugin-volume-control",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+} 
