@@ -21,6 +21,7 @@
         </config-file>
         
         <source-file src="src/ios/VolumeControlPlugin.swift" />
+        <header-file src="src/ios/VolumeControlPlugin-Bridging-Header.h" />
         
         <framework src="AVFoundation.framework" />
         <framework src="MediaPlayer.framework" />
