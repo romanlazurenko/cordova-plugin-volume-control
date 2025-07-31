@@ -24,8 +24,6 @@
         
         <framework src="AVFoundation.framework" />
         <framework src="MediaPlayer.framework" />
-        
-        <variable name="SWIFT_VERSION" value="4.2" />
     </platform>
     
     <platform name="android">
