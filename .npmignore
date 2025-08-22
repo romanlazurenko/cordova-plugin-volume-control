@@ -1,0 +1,34 @@
+# Git files
+.git
+.gitignore
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Documentation (optional - you might want to include README.md)
+# README.md
+
+# Test files (if any)
+test/
+tests/
+spec/
+__tests__/
+
+# Build artifacts
+dist/
+build/
