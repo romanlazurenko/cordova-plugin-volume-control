@@ -1,6 +1,6 @@
 {
   "name": "@romanlazurenko/cordova-plugin-volume-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova plugin to detect and control device volume levels",
   "main": "www/volumecontrol.js",
   "scripts": {
